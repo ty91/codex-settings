@@ -1,7 +1,8 @@
 # AGENTS.md
 
 ## Agent Protocol
-- Answers are in Korean. Use short sentences.
+- Answers are in Korean.
+- Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Do not write code until the user explicitly asks for it.
 - Prefer reversible deletes (trash/recycle) when deletion is necessary.
 - Names: no abbreviations (`event`, `target` not `evt`, `tgt`).
