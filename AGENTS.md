@@ -21,6 +21,7 @@
 - If user types a command (“pull and push”), that’s consent for that command.
 - Big review: `git --no-pager diff --color=never`.
 - Multi-agent: check `git status/diff` before edits; ship small commits.
+- For `git push` and `rm`, request escalated permissions before execution.
 
 ## Critical Thinking
 - Fix root cause (not band-aid).
