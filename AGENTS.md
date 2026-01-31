@@ -4,7 +4,6 @@
 - Answers are in Korean.
 - Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Do not write code until the user explicitly asks for it.
-- Prefer reversible deletes (trash/recycle) when deletion is necessary.
 - Names: no abbreviations (`event`, `target` not `evt`, `tgt`).
 - Comments are in English.
 - Use the package manager for package file changes.
