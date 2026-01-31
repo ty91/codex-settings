@@ -6,6 +6,7 @@
 - Prefer reversible deletes (trash/recycle) when deletion is necessary.
 - Names: no abbreviations (`event`, `target` not `evt`, `tgt`).
 - Comments are in English.
+- Use the package manager for package file changes.
 - Keep files <~500 LOC. Split/refactor as needed.
 - Web: search early. Quote exact errors. Prefer 2024-2025 sources. Fallback: Firecrawl (`pnpm mcp:*`) / `mcporter`.
 - Commits: Conventional Commits (`feat|fix|refactor|build|ci|chore|docs|style|perf|test`).
