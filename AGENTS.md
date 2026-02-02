@@ -4,7 +4,6 @@
 - Answers are in Korean.
 - Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Do not write code until the user explicitly asks for it.
-- Names: no abbreviations (`event`, `target` not `evt`, `tgt`).
 - Comments are in English.
 - Use the package manager for package file changes.
 - Keep files <~500 LOC. Split/refactor as needed.
