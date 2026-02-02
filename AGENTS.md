@@ -12,6 +12,7 @@
 
 ## Git
 - Safe by default: `git status/diff/log`. Push only when user asks.
+- If no explicit request, write the commit message yourself.
 - `git checkout` ok for PR review / explicit request.
 - Branch changes require user consent.
 - Destructive ops forbidden unless explicit (`reset --hard`, `clean`, `restore`, `rm`, …).
