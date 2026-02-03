@@ -8,7 +8,7 @@
 - Use the package manager for package file changes.
 - Bugs: add regression test when it fits.
 - Keep files <~500 LOC. Split/refactor as needed.
-- Commits: Conventional Commits (`feat|fix|refactor|build|ci|chore|docs|style|perf|test`).
+- Commits: atomic; Conventional Commits (`feat|fix|refactor|build|ci|chore|docs|style|perf|test`).
 - Prefer end-to-end verify; if blocked, say what's missing.
 - Web: search early. Quote exact errors. Prefer 2024-2025 sources. Fallback: Firecrawl (`pnpm mcp:*`) / `mcporter`.
 
