@@ -1,5 +1,4 @@
 ---
-name: code-review
 description: Review code changes and report quality issues
 ---
 

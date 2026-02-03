@@ -1,15 +1,20 @@
 ---
-description: Create a github pr
+description: Create a GitHub PR
 ---
 
-## Context
+## Instructions
 
-- Current branch: !`git branch --show-current`
-- Recent commits: !`git log --oneline -10`
+### Step 1 - Context Gathering
+- Run: `git status`, `git diff HEAD`, `git branch --show-current`, `git log --oneline -10`.
 
-## Your task
+### Step 2 - Remote Branch Check/Create
+- Check whether current branch is pushed to remote.
+- If not pushed, create remote branch and push.
 
-Based on the above changes, create a github pull request using `gh` cli. Set the assignee to `@me`.
-
-A pull request should have exactly three sections: Summary, Changes, and Test plan. All contents except the PR title and section headers should be written in Korean.
-
+### Step 3 - PR Creation
+- Create PR with `gh` and assign to `@me`.
+- Use Conventional Commits style for PR title.
+- PR body must have exactly three level-2 sections: Summary, Changes, Test plan.
+- Write body content in Korean; keep only PR title and section headings in English.
+- If branch name looks like an issue number, mention it in Summary.
+- In Test plan, list reviewer-run checks as task list items; if none, leave it empty.
