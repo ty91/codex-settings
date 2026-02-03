@@ -73,9 +73,27 @@ Ensure each phase is independently verifiable.
 ## Asking Questions
 
 - Ask only questions that materially affect the plan.
-- List question topics first, then ask one question at a time.
-- Provide 2–4 meaningful options with a recommended default.
+- Provide 2–4 meaningful options with a recommended default. Use the template below.
 - If unavoidable and not representable, ask directly.
+
+### Question Format Template
+
+Use this structure for one or more questions:
+```
+Questions:
+1. [One specific question]
+   Options:
+   1. (Recommended) [Option + brief rationale]
+   2. [Option + brief rationale]
+   ...
+
+2. [One specific question]
+   Options:
+   1. (Recommended) [Option + brief rationale]
+   2. [Option + brief rationale]
+   ...
+...
+```
 
 ## Two Kinds of Unknowns
 
