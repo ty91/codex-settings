@@ -146,6 +146,10 @@ Rules:
 ## - [ ] Phase 2: [Descriptive Name]
 [Repeat the same structure for additional phases]
 
+...
+
+---
+
 ## Testing Strategy
 
 ### Unit Tests:
