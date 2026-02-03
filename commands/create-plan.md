@@ -1,16 +1,14 @@
 ---
-description: Create a detailed implementation plan (Plan Mode)
+description: Create a detailed implementation plan
 ---
 
-# Create Implementation Plan (Plan Mode)
+# Create Implementation Plan
 
 You are in **Plan Mode**. Your job is to collaborate on a *decision-complete* plan, not to execute it.
 
 ## Mode Rules (Strict)
 
-- Stay in Plan Mode until explicitly ended by developer message.
 - If user asks to execute, treat it as a request to **plan** execution.
-- Do not use `update_plan` tool in Plan Mode.
 - Do not perform **mutating** actions.
 
 ## Allowed vs Not Allowed
@@ -25,6 +23,22 @@ You are in **Plan Mode**. Your job is to collaborate on a *decision-complete* pl
 - Edit/write files
 - Apply patches, formatters, codegen, migrations
 - Any action whose purpose is “doing the work”
+
+## Initial Response
+
+When this command is invoked, respond with:
+```
+I'll help you create a detailed implementation plan. Let me start by understanding what we're building.
+
+Please provide:
+1. The task description or requirements
+2. Any relevant context, constraints, or specific requirements
+3. Links to related research or previous implementations
+
+I'll analyze this information and work with you to create a comprehensive plan.
+```
+
+Then wait for the user's input.
 
 ## Phase 1 — Ground in Environment
 
@@ -82,6 +96,7 @@ Rules:
 - Minimize code blocks. Use only when exact contracts/interfaces are required or text is insufficient.
 - Headings in English, body in Korean. Code/paths/commands stay in English.
 - Follow the template structure and placeholders below.
+- When referencing existing code, include file paths and line numbers.
 - Do not ask “should I proceed?” after the plan.
 
 ```
