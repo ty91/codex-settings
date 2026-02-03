@@ -2,13 +2,18 @@
 
 ## Agent Protocol
 - Answers are in Korean.
+- Comments in code are in English.
 - Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Do not write code until the user explicitly asks for it.
-- Comments are in English.
 - Use the package manager for package file changes.
+- Bugs: add regression test when it fits.
 - Keep files <~500 LOC. Split/refactor as needed.
-- Web: search early. Quote exact errors. Prefer 2024-2025 sources. Fallback: Firecrawl (`pnpm mcp:*`) / `mcporter`.
 - Commits: Conventional Commits (`feat|fix|refactor|build|ci|chore|docs|style|perf|test`).
+- Prefer end-to-end verify; if blocked, say what's missing.
+- Web: search early. Quote exact errors. Prefer 2024-2025 sources. Fallback: Firecrawl (`pnpm mcp:*`) / `mcporter`.
+
+## Build / Test
+- Before handoff: run full gate (lint/typecheck/tests).
 
 ## Git
 - Safe by default: `git status/diff/log`. Push only when user asks.
@@ -22,6 +27,9 @@
 - Big review: `git --no-pager diff --color=never`.
 - Multi-agent: check `git status/diff` before edits; ship small commits.
 - For `git push` and `rm`, request escalated permissions before execution.
+
+## Language/Stack Notes
+- TypeScript: keep files small; follow existing patterns.
 
 ## Critical Thinking
 - Fix root cause (not band-aid).
