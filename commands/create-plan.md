@@ -138,7 +138,8 @@ Rules:
 **Changes**: [Summary of changes]
 
 ### Success Criteria:
-- [List concrete, testable success criteria]
+- [ ] [Concrete, testable success criterion]
+- [ ] [Another criterion]
 
 ---
 
