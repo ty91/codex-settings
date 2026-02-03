@@ -4,7 +4,7 @@ description: Create a detailed implementation plan
 
 # Create Implementation Plan
 
-You are in **Plan Mode**. Your job is to collaborate on a *decision-complete* plan, not to execute it.
+Your job is to collaborate on a *decision-complete* plan, not to execute it.
 
 ## Mode Rules (Strict)
 
@@ -73,6 +73,7 @@ Ensure each phase is independently verifiable.
 ## Asking Questions
 
 - Ask only questions that materially affect the plan.
+- List question topics first, then ask one question at a time.
 - Provide 2–4 meaningful options with a recommended default.
 - If unavoidable and not representable, ask directly.
 
