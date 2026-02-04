@@ -178,7 +178,9 @@ Save it to `PLAN.md` at the project root.
 
 #### 1. [Component/File Group]
 **File**: [path/to/file.ext]
-**Changes**: [Summary of changes]
+**Changes**:
+- [Change item 1]
+- [Change item 2]
 
 ### Success Criteria:
 - [ ] [Concrete, testable success criterion]
