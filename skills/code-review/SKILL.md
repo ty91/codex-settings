@@ -1,10 +1,11 @@
 ---
+name: code-review
 description: Review code changes and report quality issues
 ---
 
 # Code Review
 
-## Purpose
+## Overview
 
 Review code changes relative to the `main` branch and provide actionable feedback on quality, correctness, and risks.
 
