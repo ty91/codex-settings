@@ -181,6 +181,7 @@ Save it to `PLAN.md` at the project root.
 **Changes**:
 - [Change item 1]
 - [Change item 2]
+- ...
 
 ### Success Criteria:
 - [ ] [Concrete, testable success criterion]
