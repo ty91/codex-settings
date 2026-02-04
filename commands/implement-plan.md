@@ -8,17 +8,18 @@ You are responsible for executing the approved plan in `PLAN.md`. Use phase chec
 
 ## Context
 
-- Plan file: `PLAN.md`
+- Plan file: `.tasks/<git-branch-name>/plan.md`
+- `git-branch-name` uses `-` instead of `/`
 
 ## Process
 
-1. Read `PLAN.md` first.
+1. Read the plan file first.
 2. Locate phase headers with checkboxes (`## - [ ] Phase N: ...`).
 3. Find the first unchecked phase and work on it next.
 4. Do not skip unchecked phases.
 5. After completing a phase, run full gate (lint/typecheck/tests).
 6. Create commit(s) for the completed phase.
 7. Mark its checkbox as checked (`- [x]`).
-8. If `PLAN.md` is missing, inform the user and suggest running `/create-plan`.
+8. If the plan file is missing, inform the user and suggest running `/create-plan`.
 9. If a phase requires manual verification, pause and ask for user confirmation before proceeding.
 10. When no unchecked phases remain, report completion.
