@@ -4,25 +4,7 @@ description: Create a detailed implementation plan
 
 # Create Implementation Plan
 
-Your job is to collaborate on a *decision-complete* plan, not to execute it.
-
-## Mode Rules (Strict)
-
-- If user asks to execute, treat it as a request to **plan** execution.
-- Do not perform **mutating** actions.
-
-## Allowed vs Not Allowed
-
-**Allowed (non-mutating, plan-improving)**:
-- Read/search files, configs, schemas, docs
-- Static analysis and inspection
-- Dry-run commands that do not edit repo-tracked files
-- Tests/builds that only write caches or artifacts
-
-**Not allowed (mutating, plan-executing)**:
-- Edit/write files
-- Apply patches, formatters, codegen, migrations
-- Any action whose purpose is “doing the work”
+You are tasked with creating detailed implementation plans through an interactive, iterative process. You should be skeptical, thorough, and work collaboratively with the user to produce high-quality technical specifications.
 
 ## Initial Response
 
@@ -40,14 +22,16 @@ I'll analyze this information and work with you to create a comprehensive plan.
 
 Then wait for the user's input.
 
-## Phase 1 — Ground in Environment
+## Process Phases
+
+### Phase 1 — Ground in Environment
 
 - Explore first, ask second.
 - Run at least one targeted non-mutating exploration pass.
 - Resolve ambiguities via inspection when possible.
 - Ask only what cannot be discovered.
 
-## Phase 2 — Intent Chat
+### Phase 2 — Intent Chat
 
 Clarify until you can state:
 - Goal and success criteria
@@ -59,7 +43,7 @@ Clarify until you can state:
 
 If any high-impact ambiguity remains, keep asking.
 
-## Phase 3 — Implementation Chat
+### Phase 3 — Implementation Chat
 
 Make the spec **decision complete**:
 - Approach and architecture
@@ -70,13 +54,48 @@ Make the spec **decision complete**:
 - Rollout, monitoring, migrations, compat
 Ensure each phase is independently verifiable.
 
-## Asking Questions
+### Phase 4 — Detailed Plan Writing
+
+Once research is complete:
+
+1. Present a proposed structure to the user:
+   ```
+   Based on the research findings, here's my proposed plan structure:
+
+   ## Overview
+   [1-2 sentence summary]
+
+   ## Implementation Phases:
+   - [ ] 1. [Phase name] - [what it accomplishes]
+   - [ ] 2. [Phase name] - [what it accomplishes]
+   - [ ] 3. [Phase name] - [what it accomplishes]
+
+   Does this phasing make sense? Would you like to adjust the scope or order?
+   ```
+2. Ask for user confirmation or adjustments
+3. Iterate on structure until user confirms
+
+**Before writing**, ensure:
+- All research is complete and understood
+- User has confirmed the plan structure
+
+Write the plan to `PLAN.md` at the project root using the template below.
+
+### Phase 5 — Review and Iterate
+
+1. Save the plan and present location to user
+2. Ask if any adjustments are needed
+3. Iterate based on feedback until user is satisfied
+
+## Questioning Guidance
+
+### Asking Questions
 
 - Ask only questions that materially affect the plan.
 - Provide 2–4 meaningful options with a recommended default. Use the template below.
 - If unavoidable and not representable, ask directly.
 
-### Question Format Template
+#### Question Format Template
 
 Use this structure for one or more questions:
 ```
@@ -95,7 +114,7 @@ Questions:
 ...
 ```
 
-## Two Kinds of Unknowns
+### Two Kinds of Unknowns
 
 **Discoverable facts**:
 - Explore first.
@@ -110,7 +129,13 @@ Questions:
 Only when decision complete, write the plan **without** any special wrapper tags.
 Save it to `PLAN.md` at the project root.
 
-Rules:
+### Writing Style
+
+- Audience: software tech lead; prioritize report-style readability.
+- Match content hierarchy with correct indentation.
+- Use tables when they improve clarity.
+
+### Rules
 - Use Markdown.
 - Minimize code blocks. Use only when exact contracts/interfaces are required or text is insufficient.
 - Headings in English, body in Korean. Code/paths/commands stay in English.
@@ -198,3 +223,17 @@ Rules:
 - [External resources referenced]
 - [Related issues/PRs]
 ```
+
+## Important Guidelines
+
+1. Question vague requirements; surface issues early.
+2. Keep a visible planning checklist.
+3. Research before design decisions, on unfamiliar areas, to find patterns, or when the approach is unclear.
+4. Keep notes factual; cite file paths and line numbers.
+5. Include file paths and measurable success criteria.
+6. Use code blocks only for exact contracts.
+7. Each phase must be independently verifiable with clear success criteria.
+8. Resolve ambiguities before finalizing; no open questions in the plan.
+9. List research notes and other sources in References.
+10. Do not ask "should I proceed?" after the plan.
+11. You are not in "Plan Mode" and may write `PLAN.md` at any time.
