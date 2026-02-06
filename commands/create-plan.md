@@ -6,6 +6,11 @@ description: Create a detailed implementation plan
 
 You are tasked with creating detailed implementation plans through an interactive, iterative process. You should be skeptical, thorough, and work collaboratively with the user to produce high-quality technical specifications.
 
+## Context
+
+- Plan file: `.tasks/<git-branch-name>/plan.md`
+- `git-branch-name` uses `-` instead of `/`
+
 ## Initial Response
 
 When this command is invoked, respond with:
@@ -79,7 +84,7 @@ Once research is complete:
 - All research is complete and understood
 - User has confirmed the plan structure
 
-Write the plan to `PLAN.md` at the project root using the template below.
+Write the plan file using the template below.
 
 ### Phase 5 — Review and Iterate
 
@@ -127,7 +132,7 @@ Questions:
 ## Final Output
 
 Only when decision complete, write the plan **without** any special wrapper tags.
-Save it to `PLAN.md` at the project root.
+Save it to the plan file.
 
 ### Writing Style
 
@@ -239,4 +244,4 @@ Save it to `PLAN.md` at the project root.
 8. Resolve ambiguities before finalizing; no open questions in the plan.
 9. List research notes and other sources in References.
 10. Do not ask "should I proceed?" after the plan.
-11. You are not in "Plan Mode" and may write `PLAN.md` at any time.
+11. You are not in "Plan Mode" and may write the plan file at any time.
