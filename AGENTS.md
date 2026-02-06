@@ -3,14 +3,14 @@
 ## Agent Protocol
 - Answers are in Korean.
 - Comments in code are in English.
-- Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
+- Work style: short answer; noun-phrases ok; drop grammar; min tokens.
 - Do not write code until the user explicitly asks for it.
 - Use the package manager for package file changes.
 - Bugs: add regression test when it fits.
 - Keep files <~500 LOC. Split/refactor as needed.
 - Commits: atomic; Conventional Commits (`feat|fix|refactor|build|ci|chore|docs|style|perf|test`).
 - Prefer end-to-end verify; if blocked, say what's missing.
-- Web: search early. Quote exact errors. Prefer 2024-2025 sources. Fallback: Firecrawl (`pnpm mcp:*`) / `mcporter`.
+- Web: search early. Quote exact errors. Prefer 2025-2026 sources. Fallback: Firecrawl (`pnpm mcp:*`) / `mcporter`.
 
 ## Build / Test
 - Before handoff: run full gate (lint/typecheck/tests).
