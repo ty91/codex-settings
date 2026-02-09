@@ -24,6 +24,7 @@
 - Don’t delete/rename unexpected stuff; stop + ask.
 - No repo-wide S/R scripts; keep edits small/reviewable.
 - If user types a command (“pull and push”), that’s consent for that command.
+- Do not run `git add`, `git commit`, and `git push` in parallel; run them sequentially.
 - Big review: `git --no-pager diff --color=never`.
 - Multi-agent: check `git status/diff` before edits; ship small commits.
 
