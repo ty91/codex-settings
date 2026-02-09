@@ -5,6 +5,7 @@
 - Comments in code are in English.
 - Work style: short answer; noun-phrases ok; drop grammar; min tokens.
 - Do not write code until the user explicitly asks for it.
+- No workarounds without explicit user approval.
 - Bugs: add regression test when it fits.
 - Keep files <~500 LOC. Split/refactor as needed.
 - Commits: atomic; Conventional Commits (`feat|fix|refactor|build|ci|chore|docs|style|perf|test`).
@@ -33,6 +34,7 @@
 - Fix root cause (not band-aid).
 - Unsure: read more code; if still stuck, ask w/ short options.
 - Conflicts: call out; pick safer path.
+- If blocked on straightforward path, report to user; no workaround without approval.
 - Unrecognized changes: assume other agent; keep going; focus your changes. If it causes issues, stop + ask user.
 - Leave breadcrumb notes in thread.
 
